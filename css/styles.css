@@ -12,10 +12,10 @@
 .phones a {
     font-size: 18px;
     line-height: 24px;
-    color: #25252c;
+    /* color: #25252c; */
     font-weight: bold;
     font-family: "Arial";
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .messenger {
@@ -32,7 +32,7 @@
     border-radius: 25px;
     background-color: #ffffff;
     border: 2px solid #fd8300;
-    /* display: inline-block;
+    display: inline-block;
     padding: 14 rem 30rem;
     width: 200px;
     height: 51px;
@@ -41,7 +41,11 @@
     border: 2px solid #fd8300;
     font-size: 16 rem;
     border-radius: 28 rem;
-    border: 2 rem solid  #fd8300;       */
+    border: 2 rem solid  #fd8300;      
+}
+
+.house {
+    background-image:image(photoshataplus) ;
 }
 
 .top-background {
@@ -322,7 +326,7 @@ a.twitter:hover {
     left: 30px;
     width: 16px;
     height: 13px;
-    background-image: url(../img/home.png);
+    background-image: url(Spritehataplus/img/home.png);
 }
 
 .social {
