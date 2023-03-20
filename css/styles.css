@@ -1,6 +1,37 @@
-.body {
+/* html {
+    font-size: 1px;
+} */
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+/* @font-size {
+    font-family: ""
+} */
+
+body {
     margin: 0;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.sup {
+    font-size: 0.6em;
+}
+
+hr {
+    border:none;
+    border-top:1px solid #e4e4ec;
+}
+
+figure {
+    margin: 0px;
+}
+
+h1 {
+    color: #24242b;
+    font: 30rem "Roboto Slab";
 }
 
 .wrapper {
@@ -9,59 +40,42 @@
     padding: 0 15px;
 }
 
-.phones a {
-    font-size: 18px;
-    line-height: 24px;
-    /* color: #25252c; */
-    font-weight: bold;
-    font-family: "Arial";
-    text-decoration: none;
+h2 {
+    color: #24242b;
+    font: 24px "Roboto Slab";
 }
 
-.messenger {
-    font-size: 16px;
-    line-height: 24px;
-    text-decoration: underline;
-    color: #25252c;
+h3 {
+    font-size: 14px;
+    color: #1f1f56;
     font-family: "Arial";
 }
 
-.cta {
-    width: 200px;
-    height: 51px;
-    border-radius: 25px;
-    background-color: #ffffff;
-    border: 2px solid #fd8300;
-    display: inline-block;
-    padding: 14 rem 30rem;
-    width: 200px;
-    height: 51px;
-    border-radius: 25px;
-    background-color: #ffffff;
-    border: 2px solid #fd8300;
-    font-size: 16 rem;
-    border-radius: 28 rem;
-    border: 2 rem solid  #fd8300;      
+sup {
+    font-size: 0.6em;
 }
 
-.house {
-    background-image:image(photoshataplus) ;
+.flex-between {
+    display: flex;
+    justify-content: space-between; 
+    column-gap: 28px;
+    row-gap: 28px;
 }
 
-.top-background {
-    background-color: #1f1f56;
-}
+/* .menu {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+} */
 
 .nav-menu {
-    margin-bottom: 40px;
     border-radius: 3px;
-    background-color: #1f1f56;
-    display: flex;
+    padding-left: 0px;
 }
 
 ul {
-    list-style: none;
-    padding-right: 0;
+    /* list-style: none; */
+    padding: 0;
 }
 
 .top-menu {
@@ -75,69 +89,378 @@ ul {
     color: #b1b1d2;
     font-family: "Arial";
     text-decoration: none;
-}
-
-.social {
-    background-color: #1f1f56;
-    display: flex;
-}
-
-.flex {
-    display: flex;
-}
-
-.top-menu__first {
-    font-size: 14px;
-    letter-spacing: 2px;
-    line-height: 24px;
-    color: #b1b1d2;
-    font-family: "Arial";
-    display: flex;                    
+    padding: 25px;
+    padding-left: 0px;
 }
 
 .top-menu a:hover {
     color: #fd8300;
 }
 
+.social {
+    padding-left: 0px;
+    column-gap: 25px;
+}
+
+.social a {
+    display: block; 
+    background: url(../img/Sprite-hata.png) no-repeat;
+} 
+
+.social a:hover {
+    transition: all 0.5s ease;
+}
+
+.flex {
+    display: flex;
+}
+
 a.facebook {
-    width: 9px;
-    height: 18px;
-    background-color: #fd8300;
+    width: 10px;
+    height: 19px;
+    background-position: 0 -22px;
 }
 
 a.facebook:hover {
-    background-position: 19px -10px;
+    background-position: 0 0;
 }   
 
 a.twitter {
     width: 18px;
     height: 15px;
-    background-color: #ffffff;
+    background-position: -13px -22px;
 }
 
 a.twitter:hover {
-    background-position: 15px -18px;
+    background-position: -13px 0px;
 }
 
-.social.facebook {
-    width: 9px;
+a.instagram {
+    width: 18px;
     height: 18px;
+    background-position: -36px -22px;
+}
+
+a.instagram:hover {
+    background-position: -36px 0px;
+} 
+  
+.contacts {
+    padding: 25px 0;
+}
+
+.logo {
+    padding-right: 46px;
+    margin: 15px;
+    width: 220rem;
+    height: 57rem;
+    padding-left: 120px;
+}
+
+.phones p:first-child
+.messengers p:first-child {
+    margin-bottom: 10px;
+} 
+
+.phones a {
+    font-size: 18px;
+    line-height: 24px; 
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+    text-decoration: none;
+    padding-right: 30px;
+    padding-left: 74px;
+    background-position: -60px 0px;
+}
+
+.tel,
+.mail,
+.skype {
+    position: relative;
+}
+
+.tel:before,
+.mail:before,
+.skyp:before {
+    content: '';
+    position: absolute;
+    left: -29px;
+    top: 0;
+    background-position: url(img/Sprite_hata) ;
+}
+
+.tel:before { 
+    height: 17px;
+    width: 16px;
+    background-position: -60px +33px;
+} 
+ 
+.messenger-mail {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.mail:before {
+    height: 13px;
+    width: 17px;
+    background-position: -80px +37px;
+}
+
+.messenger-skype {
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.skype {
+    text-decoration: none;
+}
+
+.skyp:before {
+    height: 19px;
+    width: 18px;
+    background-position: -100px +31px;
+}
+
+.line  {
+    position: relative;
+}
+
+.line:before {
+    content: '';
+    position: absolute;
+    left: -29px;
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
+}
+
+.cta a {
+    color: #25252c;
+    padding: 12px 27px;
+    background-color: #ffffff;
+    border: 2px solid #fd8300;
+    border-radius: 25px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cta a:hover {
     background-color: #fd8300;
-    display: space between;
+    transition: all 1s;
 }
 
-.social.twitter {
-    width: 18px;
-    height: 15px;
-    background-color: #ffffff;
-    display: space between;
+.house {
+    background-image: url(../img/house_with_a_lake.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 17px;
 }
 
-.social.instagram {
-    width: 18px;
-    height: 18px;
-    background-color: #ffffff;
-    display: space betwee;
+.house h1 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Roboto Slab";   
+    text-align: center; 
+}
+
+.picture {
+    width: 677px;
+    height: 193px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial"; 
+    font: bold 24rem "Roboto Slab";
+}
+
+.house h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font: bold 24rem "Roboto Slab";
+    text-align: center; 
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: "Arial";
+    text-align: center;  
+}
+
+.house h3 {
+    font-size: 40px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-text {
+    width: 677px;
+    height: 193px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+    padding-left: 120px ;
+}
+ 
+.main-text h1 {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #24242b;
+    font-family: "Roboto Slab";
+}
+
+.popular-projects {
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    padding-top: 106px; 
+    padding-left: 120px;
+    text-align: center;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.figures {
+    padding-top: 148px;
+}
+
+.figcaption-h3
+.figcaption-p {
+    width: 220px;
+    height: 53px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+}
+
+.aside-menu {
+    display: block;
+    float: left;
+    list-style: none;
+    justify-content: end;
+    background-color: #e4e4ec;
+}
+
+.aside-menu p {
+    background-color: #1f1f56;
+}
+
+.figurs {
+    width: 220px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+    display: flex;
+    row-gap: 30px;
+    max-width: 730rem;
+    padding-bottom: 113px; 
+    padding: top 148px;  
+    column-gap: 28px;
+}
+
+.detail {   
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+    padding-left: 120px;
+    padding-top:20px;   
+}
+
+.article p {
+    width: 677px;
+    height: 193px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+    height: 90rem;
+    font-size: 14rem;
+    font-family: "Arial";
+    line-height: 24rem;
+}
+
+.house p {
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Arial";
+    text-align: center;
+    margin: 0px;
+    padding: 16px;
+}
+
+.top-background {
+    background-color: #1f1f56;
+}
+
+.top-menu {
+    display: flex;
+}
+
+.top-menu li {
+    margin-right: 22px;
+}
+
+.projects {
+    border-radius: 3px;
+    background-color: #1f1f56;
+    background-color: #e4e4ec;
+    background-color: #cecedd;
+    display: table-cell;
+    width: 220rem;
+}
+
+.projects p {
+    width: 219px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #1f1f56;
+}
+
+.projects p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab"
+}
+
+.projects ul a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.projects li a {
+    width: 219px;
+    height: 44px;
+    background-color: #e4e4ec;
 }
 
 .menu {
@@ -157,9 +480,10 @@ a.twitter:hover {
 
 .menu>li>a {
     font-size: 16px;
-    color: #fff;
+    color: #e4e4ec;
     font-weight: bold;
     text-decoration: none;
+    display: block;
 }
 
 .menu>li:hover>a {
@@ -171,173 +495,27 @@ a.twitter:hover {
     display: block;
 }
 
-.sub-menu {
-    display: none;
-    position: absolute;
-    top: calc(100% + 5px);
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-    width: 210px;
-    text-align: left;
-    border-radius: 3px;
-    background-color: #d2d4d5;
-    z-index: 1;
+.footer {
+    font-size: 14px;
+    line-height: 26px;
+    color: #666666;
+    font-family: "Arial";
+    display: block;   
+} 
+
+.footer-top {
+    width: 1200px;
+    height: 205px;
+    background-color: #ededf5;
 }
 
-.sub-menu::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 100%;
-    width: 100%;
-    height: 5px;
+.footer-bottom {
+    width: 1200px;
+    height: 45px;
+    background-color: #dcdce6;
 }
 
-.sub-menu a {
-    display: block;
-    padding: 14px 20px;
-    font-size: 15px;
-    color: #2a3644;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.sub-menu > li:hover > a {
-    color: #ff8505;
-    background-color: #2a3644;
-}
-
-.sub-menu li + li {
-    border-top: 1px solid #b9bdc1;
-}
-
-.sub-menu__first {
-    border-radius: 3px 3px 0 0;
-}
-
-.sub-menu__last {
-    border-radius: 0 0 3px 3px;
-}
-
-.sub-menu__second {
-    top: 0;
-    left: calc(100% + 5px);
-}
-
-.sub-menu__second::before {
-    top: 0;
-    height: 100%;
-    width: 5px;
-    left: -5px;
-}
-
-.sub-menu__double {
-    width: 420px;
-}
-
-.menu li:hover > .sub-menu__double {
-    display: flex;
-}
-
-.sub-menu__double ul {
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-    width: 100%;
-}
-
-.sub-menu__double li:hover a {
-    color: #ff8505;
-    background-color: #2a3644;
-}
-
-.sub-menu__double--first {
-    border-right: 1px solid #b9bdc1;
-}
-
-.sub-menu__double--first li:first-child a {
-    border-radius: 3px 0 0;
-}
-
-.sub-menu__double--first li:last-child a {
-    border-radius: 0 0 0 3px;
-}
-
-.sub-menu__double--last li:first-child a {
-    border-radius: 0 3px 0 0;
-}
-
-.sub-menu__double--last li:last-child a {
-    border-radius: 0 0 3px 0;
-}
-
-.top-menu>li+li {
-    border-left: 1px solid #3f4852;
-}
-
-.top-menu>li>a {
-    padding: 14px 30px;
-}
-
-.top-menu__first {
-    border-radius: 3px 0 0 3px;
-}
-
-.top-menu__last {
-    border-radius: 0 3px 3px 0;
-}
-
-.products {
-    justify-content: space-between;
-}
-
-.products>li:not(:last-child) {
-    border-right: 1px solid #3f4852;
-}
-
-.table {
-    display: table;
-    width: 100%;
-}
-
-.table__row {
-    display: table-row;
-}
-
-.table__row>li {
-    display: table-cell;
-    text-align: center;
-}
-
-.village {
+.footer-menu menu {
     display: flex;
     justify-content: space-between;
-}
-
-.village .home {
-    position: relative;
-    padding-left: 60px;
-}
-
-.home::before {
-    content: '';
-    position: absolute;
-    left: 30px;
-    width: 16px;
-    height: 13px;
-    background-image: url(Spritehataplus/img/home.png);
-}
-
-.social {
-    padding-right: 17px;
-}
-
-.social li {
-    padding: 12px 13px;
-}
-
-.social li:hover a {
-    filter: invert(50%);
-    background-color: transparent;
 }

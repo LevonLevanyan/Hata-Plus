@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Компанія “Хата Плюс” будівництво і продaжа котеджів по всому місту </title>
+    <title> Будівельна компанія “Хата Плюс” будівництво і продaжа котеджів по всому місту </title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
         <div class="top-background">
-            <div class="wrapper">
-                <div class="nav-menu">
-                    <ul class="top-menu">
+            <nav class="wrapper">
+                <div class="nav-menu flex-between">
+                    <ul class="flex-between top-menu">
                         <li><a href="">Головна</a></li>
                         <li><a href="">Про компанію</a></li>
                         <li><a href="">Наші будівлі</a></li>
                         <li><a href="">Акції</a></li>
                         <li><a href="">Контакти</a></li>
                     </ul>
-                    <ul class="social">
-                        <li> <a class="facebook" href="#"></a></li>
-                        <li> <a class="twitter" href="#"></a></li>
-                        <li> <a class="instagram" href="#"></a></li>
+                    <ul class="flex-between social">
+                        <li> <a href="#" class="facebook"></a> </a></li>
+                        <li> <a href="#" class="twitter"></a></li>
+                        <li> <a href="#" class="instagram"></a></li>
                     </ul>
                 </div>
-            </div>
+            </nav>
         </div>
         <div class="wrapper">
-            <div class="flex">
-                <a href="index.html"><img src="photoshataplus/Лого.png" alt="Лого"></a>
-                <div class="phones">
-                    <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
+            <div class="flex-between contacts">
+                <picture>
+                    <source srcset="img/logo.webp" type="img/webp">
+                    <a href="index.html"><img src="img/Лого.png" alt="Лого"></a>
+                </picture>
+                <div class="phones">    
+                    <p><a   href="tel:+380971002525">+38(097) 100-25-25</a></p>
                     <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
                 </div>
-                <div class="messenger">
-                    <p><a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
-                    <p><a href="skype:hataplus">hataplus</a></p>
+                <div class="messenger line">
+                    <p><a class="mail" href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
+                    <p><a class="skype" href="skype:hataplus">hataplus</a></p>
                 </div>
                 <div class="cta">
                     <a href="#">Замовити дзвінок</a>
@@ -47,55 +50,154 @@
         </div>
     </header>
     <main>
-        <div class="house">        
-            <img src="photoshataplus/дім біля озера.png" alt="">
-            <h1>"Пропозиція місяця</h1>
-            <h2>Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</h2>
-            <h3>5999 грн / м2</h3>
+        <div class="house">
+            <div class="wrapper">
+                <h2>ПРОПОЗИЦІЇ МІСЯЦЯ</h2>
+                <p>Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
+                <h3>5999</h3>
+                <h1>грн / м2</h1>
+            </div>
         </div>
         <div class="main">
-            <div class="main-text">
-                <picture>
-                    <img src="photoshataplus/Компанія “Хата Плюс”.png" alt="">
-                    <img src="photoshataplus/Напевно кожен з нас не раз думав про те, щоб купити будинок кот.png"
-                        type="" alt="текст про компанію хата Плюс">
-                        <div class="detail"></div>
-                           <a href="#">Детальніше про нас</a>
-                        </div>
-                </picture>
+            <div class="content">
+                <div class="main-text">
+                    <article>
+                        <h1>Компанія “Хата Плюс”</h1>
+                        <p>Напевно кожен з нас не раз думав про те, щоб купити будинок котедж і насолоджуватися життям в
+                            гармонії з природою. Дійсно, для багатьох жителів мегаполісу заміська нерухомість під містом
+                            стала справжньою віддушиною і порятунком від сумній життя в багатоповерхівках спальних
+                            районів.</p>
+                        <p>Крім цього, заміські котеджі “Хата Плюс” від забудовника — це найбільш вигідна цінова
+                            пропозиція по співвідношенню площа / вартість, оскільки у вартість домоволодіння входить
+                            також земельна ділянка, на якому можна не тільки посадити сад, але облаштувати зону
+                            відпочинку, спорудити сауну, поставити альтанку і барбекю.</p> <hr>
+                    </article>
+                    <div class="detail"></div>
+                    <a href="#">Детальніше про нас</a>
+                </div>
+                <div class="popular-projects">
+                    <h2>Популярні проекти</h2>
+                    <div class="figurs">
+                        <figure>
+                            <figcaption>
+                                <picture>
+                                    <sousre srcset="img/едмонтон.webp" type=webp>
+                                        <img src="img/едмонтон.png" alt="дім едмонтон">
+                                </picture>
+                                <h3>EDMONTON (338 м<sup>2<sup>)</h3>
+                                <p>Загальна площа будови: 312 м<sup>2</sup></p>
+                                <p>Кількість спалень: 4</p>
+                                <p>Гараж: 2 авто</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <picture>
+                                    <sousre srcset="img/монтреал.webp" type="webp">
+                                        <img src="img/монтреал.png" alt="дім монтреал">
+                                </picture>
+                                <h3>MONTREAL (332 м<sep>2</sep>)</h3>
+                                <p>Загальна площа будови: 290 м<sup>2</sup></p>
+                                <p>Кількість спалень: 3</p>
+                                <p>Гараж: 2 авто</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <figcaption>
+                                <picture>
+                                    <source srcset="img/калгарі.webp" type="webp">
+                                    <img src="img/калгарі.png" alt="дім калгарі">
+                                </picture>
+                                <h3>CALGARY (294 м<sup>2</sup>)</h3>
+                                <p>Загальна площа будови: 272 м<sup>2</sup></p>
+                                <p>Кількість спалень: 3</p>
+                                <p>Гараж: 2 авто</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
             </div>
-        <figcaption>
-            <img src="photoshataplus/едмонтон.png" alt="дім едмонтон">
-            <h3>EDMONTON (338 м2)</h3>
-            <p>Загальна площа будови: 312 м2</p>
-            <p>Кількість спалень: 4</p>
-            <p>Гараж: 2 авто</p>
-        </figcaption>
-    </figure>
-    <figure>
-        <figcaption>
-            <img src="photoshataplus/монтреал.png" alt="дім монтреал">
-            <h3>MONTREAL (332 м2)</h3>
-            <p>Загальна площа будови: 290 м2</p>
-            <p>Кількість спалень: 3</p>
-            <p>Гараж: 2 авто</p>
-        </figcaption>
-    </figure>
-    <figure>
-        <figcaption>
-            <img src="photoshataplus/калгарі.png" alt="дім калгарі">
-            <h3>CALGARY (294 м2)</h3>
-            <p>Загальна площа будови: 272 м2</p>
-            <p>Кількість спалень: 3</p>
-            <p>Гараж: 2 авто</p>
-        </figcaption>
-    </figure>
+            <aside>
+                <nav class="aside-menu">
+                    <p>Категорії проектів</p>
+                    <ul class="menu">
+                        <li>
+                            <a href="#">Генеральний план</a>
+                        </li>
+                        <li>
+                            <a href="#">Навколишнє середовище</a>
+                            <ul class="menu sub-menu">
+                                <li>
+                                    <a href="#">Продані</a>
+                                </li>
+                                <li>
+                                    <a href="#">Заброньованні</a>
+                                </li>
+                                <li>
+                                    <a href="#">В процесі будівництва</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Умови придбання</a>
+                        </li>
+                        <li>
+                            <a href="#">Загородні котеджі</a>
+                        </li>
+                        <li>
+                            <a href="#">Інфраструктура</a>
+                        </li>
+                        <li>
+                            <a href="#">Готові будинки</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+     </main>
+    <footer> 
+        <div class="footer-top">
+            <div class="wrapper flex-between">
+                <ul class="footer-menu menu">
+                    <li>
+                        <a href="#">Будинки</a>
+                    </li>
+                    <li>
+                        <a href="#">Інфраструктура</a>
+                    </li>
+                    <li>
+                        <a href="#">Сервіс</a>
+                    </li>
+                    <li>
+                        <a href="#">Новини</a>
+                    </li>
+                </ul class="footr-menu menu menu">
+                <ul>
+                    <li>
+                        <a href="#">Про компанію</a>
+                    </li>
+                    <li>
+                        <a href="#">Страхування</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакти</a>
+                    </li>
+                </ul> 
+                <div class="phones">
+                    <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
+                    <p><a href="tel:+380971002525">+38(097) 100-25-25</a></p>
+                </div>
+                 <div class="messenger">
+                    <p><a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></p>
+                    <p><a href="skype:hataplus">hataplus</a></p>
+                </div>
             </div>
         </div>
-    </main>
-    <footer>
-
+        <div class="footer-bottom">
+            <div class="wrapper">
+                <p class="copy">&copy; Будівельна компанія “Хата Плюс” 2018.</p>
+            </div>
+        </div>
     </footer>
 </body>
 
-</html>
+</html> 
